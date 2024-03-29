@@ -43,5 +43,10 @@ int main(int argc, char *argv[])
         return -1;
     }
 
+    if (fclose(fp) != 0)
+    {
+        printf("Error, Couldn't close file");
+    }
+
     return 0;
 }
